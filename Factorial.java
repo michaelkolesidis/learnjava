@@ -14,7 +14,7 @@ class Factorial {
     }
 
     public static void main(String[] args) {
-		System.out.println("Enter number to calculate its factorial: ");
+	System.out.println("Enter number to calculate its factorial: ");
 
         Scanner input = new Scanner(System.in);
         int x = input.nextInt();

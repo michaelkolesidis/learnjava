@@ -2,7 +2,7 @@
 
 import java.util.Scanner; // Import the Scanner class
 
-class Example {
+class AddIntegers {
     public static void main(String[] args) {
         int x, y, sum;
         Scanner scans = new Scanner(System.in); // Create a Scanner object

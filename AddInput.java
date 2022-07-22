@@ -23,18 +23,17 @@ import java.util.ArrayList; // Import the ArrayList class
 
 class AddInput {
     public static void main(String[] args) {
-        ArrayList<Double> nums = new ArrayList<Double>();
-
-        double sum = 0;
-
+        ArrayList<Double> nums = new ArrayList<Double>(); // Create an ArrayList object
         Scanner scans = new Scanner(System.in); // Create a Scanner object
 
-        while (scans.hasNextLine()) {
-            double num = scans.nextDouble();
-            nums.add(num);
+        while (scans.hasNextLine()) { // Scan until there are no more lines to scan
+            double num = scans.nextDouble(); // Parse double from scanned string
+            nums.add(num); // Add each scanned number to ArrayList
         }
 
-        scans.close();
+        scans.close(); // Stop scanning
+
+        double sum = 0; 
 
         for (int i = 0; i < nums.size(); i++) {
             sum += nums.get(i); // Calculate the sum

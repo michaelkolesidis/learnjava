@@ -1,7 +1,7 @@
 /* 
- * Add Input
+ * Input Sum Average
  * 
- * Take double numbers as input and outputs their sum. 
+ * Take double numbers as input and outputs their sum and their average value. 
  * Should be used with text file as input, as there is no exit 
  * condition for scanner.
  * 
@@ -15,13 +15,16 @@
  * 3
  * 
  * Output: (in file output.txt)
- * Sum is: 6.0
+ * Sum: 6.0000
+ * Average: 2.0000
  */
+
 
 import java.util.Scanner; // Import the Scanner class
 import java.util.ArrayList; // Import the ArrayList class
 
-class AddInput {
+class InputSumAverage {
+    
     public static void main(String[] args) {
         ArrayList<Double> nums = new ArrayList<Double>(); // Create an ArrayList object
         Scanner scans = new Scanner(System.in); // Create a Scanner object
@@ -39,6 +42,9 @@ class AddInput {
             sum += nums.get(i); // Calculate the sum
         }
 
-        System.out.println("Sum is: " + sum); // Print the sum
+        double average = sum / nums.size();
+        System.out.printf("Sum: %.4f\n", sum); // Print the sum
+        System.out.printf("Average: %.4f\n", average); // Print the sum
+        
     }
 }

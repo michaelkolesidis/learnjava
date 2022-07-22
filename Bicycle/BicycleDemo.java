@@ -1,4 +1,12 @@
+/*
+ * Bicycle Demo
+ * 
+ * A simple example of object-oriented programming
+ * 
+ */
+
 class BicycleDemo {
+
     public static void main(String[] args) {
 
         // Create two different 
@@ -20,5 +28,6 @@ class BicycleDemo {
         bike2.speedUp(10);
         bike2.changeGear(3);
         bike2.printStates();
+
     }
 }

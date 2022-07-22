@@ -1,43 +1,13 @@
-public class Bicycle {
+interface Bicycle {
 
-    int cadence;
-    int speed;
-    int gear;
+    void changeCadence(int newValue);
 
-    // Constructor overloading 
+    void changeGear(int newValue);
 
-    Bicycle() {
-        cadence = 0;
-        speed = 0;
-        gear = 1;
-    }
+    void speedUp(int increment);
 
-    Bicycle(int cadence_, int speed_, int gear_) {
-        cadence = cadence_;
-        speed = speed_;
-        gear = gear_;
-    }
+    void applyBrakes(int decrement);
 
-    
-    void changeCadence(int newValue) {
-        cadence = newValue;
-    }
+    void printStates();
 
-    void changeGear(int newValue) {
-        gear = newValue;
-    }
-
-    void speedUp(int increment) {
-        speed = speed + increment;
-    }
-
-    void applyBrakes(int decrement) {
-        speed = speed - decrement;
-    }
-
-    void printStates() {
-        System.out.println("cadence:" +
-                cadence + " speed:" +
-                speed + " gear:" + gear);
-    }
 }
